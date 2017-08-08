@@ -14,7 +14,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void buttonClicked(View view) {
-        
+
+        Intent i = new Intent();
+        i.setAction("my_receiver_action");
+        i.putExtra("msg", "Hello from MainActivity");
+        sendBroadcast(i);
 
     }
 }

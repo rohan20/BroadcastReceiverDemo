@@ -17,9 +17,10 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name="MyBroadcastReceiver">
+        <receiver android:name=".MyBroadcastReceiver">
             <intent-filter>
                 <action android:name="my_receiver_action"/>
+
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </receiver>
